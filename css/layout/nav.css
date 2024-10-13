@@ -1,0 +1,25 @@
+/* deixa os filhos do menu um ao lado do outro
+e com espaço entre eles */
+.menu nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* deixa os filhos da ul um ao lado do outro */
+ul {
+  display: flex;
+}
+li, a {
+  margin-left: 30px;
+  text-decoration: none;
+}
+.menu-logo {
+  width: 96px;
+  height: 96px;
+}
+
+@media (max-width: 600px) {
+  .menu-center {
+    display: none;
+  }
+}
