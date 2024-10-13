@@ -7,12 +7,32 @@ e com espaço entre eles */
 }
 /* deixa os filhos da ul um ao lado do outro */
 ul {
-  display: flex;
+  list-style-type: none; /* Remove os marcadores padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove a margem padrão */
+  display: flex; /* Permite que os itens fiquem lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas pequenas */
 }
-li, a {
-  margin-left: 30px;
-  text-decoration: none;
+
+li {
+  margin: 0 20px; /* Espaçamento horizontal entre os itens */
+  position: relative; /* Para o efeito de pseudo-elemento */
 }
+
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #f000f0; /* Cor do texto */
+  padding: 10px 15px; /* Preenchimento em torno do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+a:hover {
+  background-color: #4a90e2; /* Cor de fundo ao passar o mouse */
+  color: white; /* Muda a cor do texto ao passar o mouse */
+}
+
 .menu-logo {
   width: 96px;
   height: 96px;
