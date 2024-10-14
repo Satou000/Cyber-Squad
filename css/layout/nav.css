@@ -1,3 +1,9 @@
+* {
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
 /* deixa os filhos do menu um ao lado do outro
 e com espaço entre eles */
 .menu nav {
@@ -29,17 +35,39 @@ a {
 }
 
 a:hover {
-  background-color: #4a90e2; /* Cor de fundo ao passar o mouse */
+  background-color: #1e3753; /* Cor de fundo ao passar o mouse */
   color: white; /* Muda a cor do texto ao passar o mouse */
 }
 
 .menu-logo {
   width: 96px;
   height: 96px;
+  margin: auto;
 }
 
 @media (max-width: 600px) {
   .menu-center {
     display: none;
   }
+}
+
+.interface {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.menu-logo img {
+    transition: transform 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+.menu-logo img:hover {
+    transform: scale(1.1); /* Aumenta o logotipo ao passar o mouse */
+}
+
+.menu nav a {
+    color: white; /* Links brancos no cabeçalho */
+}
+
+.menu nav a:hover {
+    color: #f31282; /* Cor diferente ao passar o mouse nos links */
 }

@@ -1,55 +1,48 @@
-
 header {
-    padding: 0.5% 4%;
-    background-color: #0e1016;
-    border-bottom: 1px solid #21418c;
-    color: white; /* Texto branco no cabeçalho */
+  background-color: #0e1016;
+  border-bottom: 1px solid #21418c;
+  color: white; /* Texto branco no cabeçalho */
 }
 
 header a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.2s;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
 }
 
-  header a:hover {
-    color: white;
-    transform: scale(1.05);
-    font-weight: bold;
+header a:hover {
+  color: white;
+  transform: scale(1.05);
+  font-weight: bold;
 }
-  
+
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-  
+
 header nav ul li {
-    display: inline-block;
-    padding: 0 40px;
+  display: inline-block;
+  padding: 0 40px;
 }
-  
+
 header .contato button {
-    padding: 7px 35px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: rgb(32, 191, 223);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0px 2px 4px rgb(23, 99, 114);
+  padding: 7px 35px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(32, 191, 223);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgb(23, 99, 114);
 }
-  
-  header .contato button:houver {
-    box-shadow: 0px 2px 4px rgb(23, 99, 114);
+
+header .contato button:houver {
+  box-shadow: 0px 2px 4px rgb(23, 99, 114);
 }
-  
 
 .logo-principal {
-    max-width: 100%; /* A imagem nunca será maior que o contêiner pai */
-    height: auto;    /* A altura será ajustada automaticamente para manter a proporção */
-}
-
-.imagem-principal {
-    max-width: 100%; /* A imagem nunca será maior que o contêiner pai */
-    height: auto;    /* A altura será ajustada automaticamente para manter a proporção */
+  max-width: 100%;
+  height: auto;
+  width: 100px;
 }

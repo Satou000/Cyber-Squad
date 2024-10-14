@@ -1,55 +1,14 @@
 @import "./layout/nav.css";
 @import "./layout/header.css";
 @import "./core/reset.css";
+@import "./layout/body.css";
+@import "./core/typography.css";
+@import "./core/variaveis.css";
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.397);
-    z-index: -1;
-  }
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: black;
-    background-image: url(../images/Fundo.png);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
-    color: white;
-    line-height: 1.6;
-    position: relative;
-    z-index: 0;
-}
-
-.interface {
+.imagem-principal {
+    margin-top: 100px;
     max-width: 100%;
-    margin: 0 auto;
-}
-
-.menu-logo img {
-    transition: transform 0.3s; /* Efeito suave ao passar o mouse */
-}
-
-.menu-logo img:hover {
-    transform: scale(1.1); /* Aumenta o logotipo ao passar o mouse */
-}
-
-.menu nav a {
-    color: white; /* Links brancos no cabeçalho */
-}
-
-.menu nav a:hover {
-    color: #f31282; /* Cor diferente ao passar o mouse nos links */
-}
-
-.msg-principal {
-    padding: 20px; /* Mais espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    height: auto;
 }
 
 button {
@@ -61,13 +20,3 @@ button {
     cursor: pointer; /* Muda o cursor ao passar o mouse */
     transition: background-color 0.3s; /* Transição suave */
 }
-
-button:hover {
-    background-color: #f31282; /* Cor do botão ao passar o mouse */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }

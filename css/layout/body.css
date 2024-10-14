@@ -1,0 +1,31 @@
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.295);
+  z-index: -1;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url(images/Fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  line-height: 1.6;
+  position: relative;
+  z-index: 0;
+}
+
+.msg-principal {
+  padding: 20px; /* Mais espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+button:hover {
+  background-color: #390f4d; /* Cor do botão ao passar o mouse */
+}
