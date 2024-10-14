@@ -1,73 +1,50 @@
-* {
-    margin: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-/* deixa os filhos do menu um ao lado do outro
-e com espaço entre eles */
-.menu nav {
+.menu-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-/* deixa os filhos da ul um ao lado do outro */
-ul {
-  list-style-type: none; /* Remove os marcadores padrão */
-  padding: 0; /* Remove o preenchimento padrão */
-  margin: 0; /* Remove a margem padrão */
-  display: flex; /* Permite que os itens fiquem lado a lado */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas pequenas */
+  background-color: #151820;
+  padding: 5px;
 }
 
-li {
-  margin: 0 20px; /* Espaçamento horizontal entre os itens */
-  position: relative; /* Para o efeito de pseudo-elemento */
+.menu nav a {
+  color: white;
 }
 
-a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: #f000f0; /* Cor do texto */
-  padding: 10px 15px; /* Preenchimento em torno do texto */
-  border-radius: 5px; /* Bordas arredondadas */
-  transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+/*lista*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-a:hover {
-  background-color: #1e3753; /* Cor de fundo ao passar o mouse */
-  color: white; /* Muda a cor do texto ao passar o mouse */
+nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+  margin: 0 20px;
+  position: relative;
 }
 
-.menu-logo {
-  width: 96px;
-  height: 96px;
-  margin: auto;
+.menu-nav li:hover {
+  transform: scale(1.1);
 }
+
+/*link*/
+
+nav a {
+  text-decoration: none;
+  color: rgb(178, 178, 197);
+  padding: 15px 4px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*Responsividade*/
 
 @media (max-width: 600px) {
   .menu-center {
     display: none;
   }
-}
-
-.interface {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.menu-logo img {
-    transition: transform 0.3s; /* Efeito suave ao passar o mouse */
-}
-
-.menu-logo img:hover {
-    transform: scale(1.1); /* Aumenta o logotipo ao passar o mouse */
-}
-
-.menu nav a {
-    color: white; /* Links brancos no cabeçalho */
-}
-
-.menu nav a:hover {
-    color: #f31282; /* Cor diferente ao passar o mouse nos links */
 }

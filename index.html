@@ -1,81 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyber Squad</title>
 
+    <script src="js/script.js"></script>
     <!-- importação do arquivo css principal -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
     <header>
-        <div class="menu-logo">
-            <a href="index.html">
-                <img src="./images/logo sem efeito.png" width="75" alt="Logo" class="logo-principal">
-            </a>
+      <div class="menu-logo">
+        <a href="index.html">
+          <img
+            src="./images/logo sem efeito.png"
+            alt="Logo"
+            id="logo-principal"
+          />
+        </a>
+      </div>
+    </header>
+
+    <nav class="menu-nav">
+      <ul class="menu-center">
+        <li>
+          <a class="links negrito" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="links" href="about.html">Sobre nós</a>
+        </li>
+        <li>
+          <a class="links" href="trajetoria.html">Nossa trajetória</a>
+        </li>
+        <li>
+          <a class="links" href="galeria.html">Galeria</a>
+        </li>
+        <li>
+          <a class="links" href="portifolio.html">Portifólio</a>
+        </li>
+        <li>
+          <a class="links" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="msg-principal">
+      <img
+        src="images/Cyber Squad Nome.png"
+        alt="Titulo-Principal"
+        class="imagem-principal"
+      />
+      <p class="txt-medium">
+        Seja muito bem-vindo! Somos uma equipe composta por alunos do segundo
+        semestre dos cursos de Engenharia de Produção e Computação do SENAC
+        Santo Amaro. Clique para conhecer mais sobre nós e um pouco de nossa
+        trajetória.
+      </p>
+      <a href="#equipe">
+        <img
+          src="images/botao_lets_start.png"
+          alt="lets-start"
+          class="lets-start"
+        />
+      </a>
+    </div>
+
+    <section class="equipe" id="equipe">
+      <h2>Conheça Nossa Equipe!</h2>
+      <div class="equipe-container">
+        <div class="membro">
+          <img
+            src="https://i.pinimg.com/236x/31/98/fb/3198fbab733b9ad1b4f9d97ce4232313.jpg"
+            alt="Fernanda"
+          />
+          <h3 class="nomes">Fernanda Rodrigues</h3>
+          <p class="cargos">Designer Gráfica</p>
         </div>
-        <div class="interface">
-            <nav class="menu-nav">
-                <ul class="menu-center">
-                    <li><a class="links negrito" href="index.html">Home</a></li>
-                    <li><a class="links" href="about.html">Sobre nós</a></li>
-                    <li><a class="links" href="trajetoria.html">Nossa trajetória</a></li>
-                    <li><a class="links" href="galeria.html">Galeria</a></li>
-                    <li><a class="links" href="portifolio.html">Portifólio</a></li>
-                    <div class="contato">
-                        <a href="contato.html">
-                          <button>Contato</button>
-                        </a>
-                      </div>
-                </ul>
-            </nav>
+        <div class="membro">
+          <img src="images/Mariana.png" alt="Mariana" />
+          <h3 class="nomes">Mariana Sato</h3>
+          <p class="cargos">Desenvolvedora</p>
+        </div>
+        <div class="membro">
+          <img
+            src="https://i.pinimg.com/236x/31/98/fb/3198fbab733b9ad1b4f9d97ce4232313.jpg"
+            alt="Giulia"
+          />
+          <h3 class="nomes">Giulia Gabriela</h3>
+          <p class="cargos">Redatora</p>
+        </div>
+        <div class="membro">
+          <img
+            src="https://i.pinimg.com/236x/31/98/fb/3198fbab733b9ad1b4f9d97ce4232313.jpg"
+            alt="membro"
+          />
+          <h3 class="nomes">Pablo Vargas</h3>
+          <p class="cargos">Projetista</p>
+        </div>
+        <div class="membro">
+          <img
+            src="https://i.pinimg.com/236x/31/98/fb/3198fbab733b9ad1b4f9d97ce4232313.jpg"
+            alt="Sarah"
+          />
+          <h3 class="nomes">Sarah Moura</h3>
+          <p class="cargos">Redatora</p>
+        </div>
+        <div class="membro">
+          <img
+            src="https://i.pinimg.com/236x/31/98/fb/3198fbab733b9ad1b4f9d97ce4232313.jpg"
+            alt="Pedro"
+          />
+          <h3 class="nomes">Pedro Leal</h3>
+          <p class="cargos">Projetista</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nossa-trajetoria" class="nossa-trajetoria">
+        <h2>Nossa Trajetória</h2>
+        <p>Acompanhe nossa jornada e veja como crescemos ao longo dos anos.</p>
+
+        <div class="trajetoria-card">
+            <img src="images/projeto-thumbnail.png" alt="Projeto" class="trajetoria-img" />
+            <div class="trajetoria-content">
+                <h3>Projeto Incrível</h3>
+                <p>Descubra mais sobre este projeto que transformou nossa história.</p>
+                <a href="detalhes-projeto.html" class="botao-detalhes">Saiba Mais</a>
             </div>
         </div>
-    </header>    
-    <div class="msg-principal">
-        <img src="images/Cyber Squad Nome.png" alt="Titulo-Principal" class="imagem-principal">
-        <p class="txt-medium">Somos uma equipe composta por alunos do segundo semestre dos cursos de Engenharia de Produção e Computação do SENAC Santo Amaro. Clique para conhecer mais sobre nós e um pouco de nossa trajetória!</p>
-        <button>Let's Start!</button>
-    </div>
+    </section>
     
-    <h1 class="topicos">Conheça nossa equipe!</h1>
-    <div id="organograma_mor">
-      <div class="organograma">
-        <div class="pessoas" id="Fulano">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Cacildo de Tal</p>
-        </div>
-        <div class="pessoas" id="Cicrano">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Cicrano de tal</p>
-        </div>
-        <div class="pessoas" id="Beltrano">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Lilico de tal</p>
-        </div>
-        <div class="pessoas" id="Caio">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Caio</p>
-        </div>
-      </div>
-
-      <div class="organograma dois">
-        <div class="pessoas" id="Fulaninho">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Fulaninho de Tal</p>
-        </div>
-        <div class="pessoas" id="Cicraninho">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Cicraninho de tal</p>
-        </div>
-        <div class="pessoas" id="Beltraninho">
-          <img src="imagens/Zeronet_logo.png" width="100" alt="logo cyber squad" />
-          <p>Beltraninho de tal</p>
-        </div>
-      </div>
-    </div>
-</body>
+  </body>
 </html>

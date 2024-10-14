@@ -1,7 +1,9 @@
+/* Header */
+
 header {
   background-color: #0e1016;
-  border-bottom: 1px solid #21418c;
-  color: white; /* Texto branco no cabeçalho */
+  color: white;
+  padding: 15px 15px 15px 15px;
 }
 
 header a {
@@ -17,32 +19,20 @@ header a:hover {
   font-weight: bold;
 }
 
-header nav ul {
-  list-style-type: none;
-}
-
-header nav ul li {
-  display: inline-block;
-  padding: 0 40px;
-}
-
-header .contato button {
-  padding: 7px 35px;
-  font-size: 15px;
-  font-weight: 600;
-  background-color: rgb(32, 191, 223);
-  border: 0;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0px 2px 4px rgb(23, 99, 114);
-}
-
-header .contato button:houver {
-  box-shadow: 0px 2px 4px rgb(23, 99, 114);
-}
-
-.logo-principal {
+/* Logo */
+#logo-principal {
   max-width: 100%;
   height: auto;
-  width: 100px;
+}
+
+.menu-logo {
+  width: 96px;
+  height: 110px;
+  display: block;
+  margin: 15px auto 0;
+  transition: transform 0.2s;
+}
+
+.menu-logo:hover {
+  transform: scale(1.0.5);
 }
