@@ -5,7 +5,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
   }
 
@@ -24,7 +24,6 @@ body {
 }
 
 .msg-principal {
-    padding: 20px; /* Mais espaçamento interno */
     text-align: center; /* Centraliza o texto */
   }
 
@@ -44,41 +43,4 @@ body {
 
 .lets-start:hover {
     transform: scale(1.1); /* Aumenta o logotipo ao passar o mouse */
-}
-
-.equipe {
-    text-align: center;
-    margin: 50px 0;
-}
-
-.equipe h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.equipe-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-}
-
-.membro {
-    background-color: #f4f4f4; /* Cor de fundo do quadrado */
-    border: 1px solid #ccc; /* Borda do quadrado */
-    border-radius: 8px; /* Cantos arredondados */
-    margin: 15px; /* Espaçamento entre os membros */
-    padding: 20px; /* Espaçamento interno */
-    width: 200px; /* Largura fixa do quadrado */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra do quadrado */
-    transition: transform 0.3s; /* Transição suave */
-}
-
-.membro:hover {
-    transform: scale(1.05); /* Aumenta o quadrado ao passar o mouse */
-}
-
-.membro img {
-    width: 100%; /* Imagem ocupa toda a largura do quadrado */
-    border-radius: 50%; /* Corta a imagem em um círculo */
-    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
 }

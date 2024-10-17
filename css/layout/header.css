@@ -29,7 +29,7 @@ header a:hover {
   width: 96px;
   height: 110px;
   display: block;
-  margin: 15px auto 0;
+  margin: 1px auto 0;
   transition: transform 0.2s;
 }
 

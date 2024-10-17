@@ -4,6 +4,8 @@
 @import "./layout/body.css";
 @import "./core/typography.css";
 @import "./core/variaveis.css";
+@import "./layout/aboutus.css";
+@import "./layout/footer.css";
 
 .imagem-principal {
     margin-top: 100px;

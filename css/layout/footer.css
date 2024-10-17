@@ -1,0 +1,59 @@
+footer {
+  background-color: #0e1016;
+  padding: 20px;
+  border-top: 1px solid #2a303f;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+footer .team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+footer .team-members > div {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+footer .team-members h4,
+footer .team-members p {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: rgb(122, 2, 116);
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer .footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #ffffff;
+}
