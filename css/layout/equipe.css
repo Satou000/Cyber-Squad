@@ -53,6 +53,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) { /* Ajuste este valor conforme necessário */
@@ -82,8 +83,8 @@
 
   #fotoEquipe {
     max-width: 100%;
-    margin-left: 0;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
