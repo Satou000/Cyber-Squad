@@ -1,0 +1,91 @@
+.msg-principal {
+  margin-top: 250px;
+}
+
+.titulo-principal {
+  display: block;
+  margin: 10px auto 20px auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+/* Texto da mensagem principal */
+.texto-principal {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  padding: 15px 250px;
+  text-align: center;
+  font-family: var(--p-font);
+}
+
+/* Botão Lets Start */
+.botao-principal {
+  text-align: center;
+}
+
+.lets-start {
+  background: #1a1a1a;
+  border: 2px solid #00ffff;
+  border-radius: 6px;
+  color: #00ffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  font-family: var(--titulos);
+}
+
+.lets-start:hover {
+  background: #00ffff;
+  color: #1a1a1a;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.8);
+  border-color: #1a1a1a;
+  transform: scale(1.1);
+}
+
+.lets-start:active {
+  transform: translateY(1px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Para telas menores, como tablets */
+  .texto-principal {
+    padding: 15px 15px;
+  }
+  .titulo-principal {
+    padding: 30px;
+  }
+  .lets-start {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Para telas de smartphones */
+  .texto-principal {
+    padding: 10px 10px; /* Mais compacto em smartphones */
+  }
+  .titulo-principal {
+    max-width: 80%;
+  }
+  .lets-start {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem-principal {
+    max-width: 90%;
+  }
+}

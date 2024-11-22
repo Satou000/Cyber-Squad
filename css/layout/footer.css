@@ -1,0 +1,155 @@
+.footer-content {
+  background-color: #0e1016;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-top: 1px solid #2a303f;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+.footer-links,
+.footer-contact,
+.footer-gallery {
+  flex-grow: 1;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: var(--titulos);
+}
+
+.footer-logo img {
+  width: 90px;
+}
+
+.footer-descricao {
+  color: #cccccc;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-family: var(--p-font);
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-gallery h4 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: var(--titulos);
+}
+
+.footer-links ul,
+.footer-contact button,
+.footer-gallery ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-gallery li {
+  margin-bottom: 5px;
+  font-family: var(--p-font);
+}
+
+.footer-links a,
+.footer-gallery a {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover,
+.footer-gallery a:hover {
+  color: #ffffff;
+}
+
+.footer-contact button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #d319ba;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: var(--titulos);
+}
+
+.footer-contact button:hover {
+  background-color: #a0128d;
+}
+
+.footer-bottom {
+  background-color: #151820;
+  text-align: center;
+  padding: 1px;
+  color: #ffffff;
+  font-family: var(--p-font);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .footer-links,
+  .footer-contact,
+  .footer-gallery {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-descricao,
+  .footer-links a,
+  .footer-gallery a {
+    font-size: 0.8rem;
+  }
+
+  .footer-contact button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo h3 {
+    font-size: 1rem;
+  }
+
+  .footer-descricao,
+  .footer-links a,
+  .footer-gallery a {
+    font-size: 0.7rem;
+  }
+
+  .footer-contact button {
+    font-size: 0.7rem;
+    padding: 8px 10px;
+  }
+}

@@ -1,0 +1,38 @@
+header {
+  background-color: #0e1016;
+  color: white;
+  padding: 10px 0px 5px 0px;
+  position: relative;
+  z-index: 2;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: white;
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+/* Logo */
+#cabecalho-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.cabecalho-logo {
+  width: 96px;
+  height: 110px;
+  display: block;
+  margin: 1px auto 0;
+  transition: transform 0.2s;
+}
+
+.cabecalho-logo:hover {
+  transform: scale(1);
+}

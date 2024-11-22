@@ -1,0 +1,7 @@
+@import "./layout/nav.css";
+@import "./layout/header.css";
+@import "./layout/footer.css";
+@import "./core/variaveis.css";
+@import "./layout_projeto/body_projeto.css";
+@import "./layout_projeto/home_projeto.css";
+@import "./layout_projeto/tematica_projeto.css";

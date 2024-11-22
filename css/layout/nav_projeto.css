@@ -1,0 +1,104 @@
+/* Estilo da navegação */
+.menu-nav {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  background-color: #151820;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000; /* Garante que o nav fique acima de outros elementos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-nav.hidden {
+  transform: translateY(-100%);
+}
+
+.menu-nav.visible {
+  transform: translateY(0);
+}
+
+.menu-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: var(--nav-font);
+}
+
+.menu-nav li {
+  display: inline-block;
+  padding: 0 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.menu-nav li:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(178, 178, 197);
+  padding: 15px 4px;
+  border-radius: 5px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Logo */
+#cabecalho-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.cabecalho-logo {
+  width: 96px;
+  height: 110px;
+  display: block;
+  margin: 1px auto 0;
+  transition: transform 0.2s;
+}
+
+.cabecalho-logo:hover {
+  transform: scale(1);
+}
+
+#img-acima {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para menu expansível em dispositivos móveis */
+@media (max-width: 768px) {
+  .menu-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

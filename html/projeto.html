@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Squad</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout_projeto/body_projeto.css" />
+    <link rel="stylesheet" href="../css/layout/nav_projeto.css" />
+  </head>
+  <body>
+    <div class="home-page-2">
+      <header>
+        <nav class="menu-nav">
+          <div id="img-acima">
+            <div class="cabecalho-logo">
+              <a href="../index.html">
+                <img
+                  src="../img/logo sem efeito.png"
+                  alt="Logo"
+                  id="cabecalho-logo"
+                />
+              </a>
+            </div>
+            <button id="menuToggle" class="menu-toggle">&#9776;</button>
+            <ul class="menu-itens" id="menuItens">
+              <li><a class="links negrito" href="../index.html">Home</a></li>
+              <li>
+                <a class="links" href="../index.html#sobre-nos">Sobre nós</a>
+              </li>
+              <li><a class="links" href="../html/projeto.html">Projeto</a></li>
+              <li>
+                <a class="links" href="">Portfólio</a>
+              </li>
+              <li><a class="links" href="">Pitch</a></li>
+              <li><a class="links" href="../html/contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="msg-principal">
+        <img src="../img/Sobre_Projeto_Titulo.png" class="titulo-principal" />
+        <p class="texto-principal">
+          Um veículo autônomo em escala representa um grande avanço tecnológico
+          da área automotiva. É um robô que, por meio de uma combinação de
+          sensores, programas e sistemas de comunicação, são capazes de analisar
+          o ambiente ao seu redor, seguir um trajeto e desviar de obstáculos de
+          maneira independente.
+        </p>
+      </div>
+    </div>
+    <div class="small-gap2">
+      <h2 class="main-text">Temática</h2>
+      <section class="card-projeto">
+        <div>
+          <p class="main-text-p">
+            O nosso projeto foi inserido no conceito de Cyberpunk. Desta forma,
+            buscando oferecer uma visão tecnológica que refletisse a
+            complexidade dos ambientes urbanos. 
+            <br>
+            <br>
+            Considerando que o carrinho foi projetado para participar de uma
+            competição de carros autônomos, realizada ao ar livre na AARC do
+            ABC, diversos fatores que simulam um ambiente urbano precisaram ser
+            levados em consideração, tais como o relevo do terreno, as condições
+            climáticas e a limitação de espaço a fim de se obter sucesso na
+            prova.
+          </p>
+        </div>
+        <img
+          src="../img/temática.png"
+          alt="Imagem da temática"
+          class="com-borda"
+        />
+      </section>
+      <h2 class="main-text">Design da bolha</h2>
+      <section class="card-projeto">
+        <div>
+          <p class="main-text-p">
+            Inspirada no modelo de carro Mizutani Shion, um cupê esportivo,
+            nossa bolha adota a estética de um dos carros do jogo Cyberpunk
+            2077, um jogo de ação e RPG ambientado numa metrópole distópica,
+            aproveitando o gancho de nossa temática. O desenho foi projetado no
+            software de modelagem 3D Onshape, e impresso em impressora 3D.
+          </p>
+        </div>
+        <img
+          src="../img/Carrinho_01.png"
+          alt="Imagem da bolha"
+          class="com-borda"
+        />
+      </section>
+      <h2 class="main-text">Design do chassi</h2>
+      <section class="card-projeto">
+        <div>
+          <p class="main-text-p">
+            Nosso chassi foi projetado no software de modelagem 3D Onshape, e
+            impresso na impressora de corte à laser, em MDF, que oferece a
+            combinação ideal entre leveza e resistência estrutural. Ele permitiu
+            que o chassi suportasse os componentes eletrônicos com estabilidade,
+            além de permanecer resistente durante testes e experimentações.
+          </p>
+        </div>
+        <img
+          src="../img/Chassi_MDF.png"
+          alt="Imagem do chassi"
+          class="com-borda"
+        />
+      </section>
+    </div>
+
+    <h2 class="main-text" id="imagensProjeto">Imagens do projeto</h2>
+    <div class="image-container">
+      <button id="prevBtn" class="nav-btn">&larr;</button>
+      <div class="image-wrapper">
+        <div class="image-background">
+          <img
+            src="../img/Chassi_Onshape.png"
+            class="project-image"
+            alt="Imagem 1"
+          />
+          <div class="image-description">Chassi Projetado</div>
+        </div>
+        <div class="image-background">
+          <img
+            src="../img/Chassi Vista Superior.png"
+            class="project-image"
+            alt="Imagem 2"
+          />
+          <div class="image-description">Vista Superior Chassi</div>
+        </div>
+        <div class="image-background">
+          <img
+            src="../img/Chassi_3D.png"
+            class="project-image"
+            alt="Imagem 3"
+          />
+          <div class="image-description">Chassi 3D</div>
+        </div>
+      </div>
+      <button id="nextBtn" class="nav-btn">&rarr;</button>
+    </div>
+
+    <h2 class="main-text" id="funcionamentoGeral">Funcionamento geral</h2>
+    <section class="card-projeto" id="funcionamento">
+      <p class="main-text-p">
+        Ao ligar a chave, a bateria alimenta a placa Arduíno e os motores, e o
+        carrinho entra em movimento. Em seguida, os sensores ultrassônicos
+        realizam o monitoramento do ambiente em busca de obstáculos. Caso algo
+        seja detectado ha uma distancia de ate 50 cm, o sistema ajusta o
+        movimento do carrinho:
+      </p>
+
+      <div class="video-container">
+        <video width="560" height="315" controls>
+          <source src="../videos/video-carrinho.mp4" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+
+      <p class="main-text-p">
+        Quando há um obstáculo detectado ao lado direito, os motores do lado
+        direito avançam enquanto os do lado esquerdo recuam, de maneira a
+        permitir que o carrinho desvie para a esquerda. O mesmo acontece quando
+        algo é detectado no lado esquerdo, invertendo-se o movimento dos motores
+        para que os motores do lado esquerdo avancem e do lado direito recuem e
+        o carrinho vire para a direita. Já o sensor frontal, ao detectar um
+        obstáculo próximo, ativa a função ré, fazendo com que todos os motores
+        recuem para trás para evitar colisões. Esse ciclo se repete
+        continuamente, permitindo que o robô navegue de maneira autônoma pelo
+        ambiente.
+      </p>
+    </section>
+    <h2 class="main-text-centralizado" id="imagensProjeto">Principais componentes</h2>
+    <div class="cards-container">
+      <button id="prevCardBtn" class="nav-btn">&larr;</button>
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="../img/Arduíno.png" alt="Imagem 1" class="card-image" />
+          <h3 class="card-title">Arduino</h3>
+          <button class="saiba-mais-btn" data-modal="modal1">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/Motor.jpg" alt="Imagem 2" class="card-image" />
+          <h3 class="card-title">Motores</h3>
+          <button class="saiba-mais-btn" data-modal="modal2">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/shield.jpeg" alt="Imagem 3" class="card-image" />
+          <h3 class="card-title">Ponte H Shield</h3>
+          <button class="saiba-mais-btn" data-modal="modal3">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img
+            src="../img/Sensor ultrassônico.jpg"
+            alt="Imagem 4"
+            class="card-image"
+          />
+          <h3 class="card-title">Sensor de Distância Ultrassônico HC-SR04</h3>
+          <button class="saiba-mais-btn" data-modal="modal4">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img
+            src="../img/Chave Gangorra.jpg"
+            alt="Imagem 5"
+            class="card-image"
+          />
+          <h3 class="card-title">Chaves</h3>
+          <button class="saiba-mais-btn" data-modal="modal5">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/Celulas.jpg" alt="Imagem 6" class="card-image" />
+          <h3 class="card-title">Células</h3>
+          <button class="saiba-mais-btn" data-modal="modal6">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/regulador.jpeg" alt="Imagem 7" class="card-image" />
+          <h3 class="card-title">Regulador de Tensão</h3>
+          <button class="saiba-mais-btn" data-modal="modal7">Saiba Mais</button>
+        </div>
+        <!-- Adicione mais cards aqui se necessário -->
+      </div>
+      <button id="nextCardBtn" class="nav-btn">&rarr;</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-text"></div>
+      </div>
+    </div>
+
+    <!-- Conteúdo dos modais -->
+    <div id="modal1" style="display: none">
+      <p class="modal-text">
+        <strong>Arduino</strong>
+        <br><br> Programado para controlar as ações do robô com base nos sinais
+        recebidos dos três sensores ultrassônicos.
+      </p>
+    </div>
+    <div id="modal2" style="display: none">
+      <p class="modal-text">
+        <strong>Motores</strong>
+        <br>
+        <br>
+        Foram utilizados quatro conjuntos de rodas com motores de
+        corrente contínua (DC) que possibilitaram a tração e movimentação do
+        robô.
+      </p>
+    </div>
+    <div id="modal3" style="display: none">
+      <p class="modal-text">
+        <strong>Ponte H Shield</strong>
+        <br>
+        <br>
+        Foram utilizadas 2 pontes H para controlar o sentido (horário
+        e anti-horário), direção (ré e frente), bem como a velocidade dos
+        motores, direcionando-os para o movimento desejado.
+      </p>
+    </div>
+    <div id="modal4" style="display: none" class="modal-text">
+      <p class="modal-text">
+        <strong>Sensor de Distância Ultrassônico HC-SR04</strong> 
+        <br>
+        <br>
+        Detecta os obstáculos na frente do robô. 
+        Ele emite ondas ultrassônicas de 40 kHz que ao
+        refletirem em objetos próximos permitem calcular a distância até os
+        obstáculos e desviar deles.
+      </p>
+    </div>
+    <div id="modal5" style="display: none">
+      <p class="modal-text">
+        <strong>Chaves</strong> 
+        <br>
+        <br>
+        Usadas como interruptores para ligar ou desligar o robô.
+      </p>
+    </div>
+    <div id="modal6" style="display: none">
+      <p class="modal-text">
+        <strong>Células</strong> 
+        <br>
+        <br>
+        Foram utilizadas oito células de 4V, organizadas em dois
+        suportes individuais com 4 células ligadas em paralelo cada. Os dois
+        suportes são conectados em série. Com isso, o sistema gera uma tensão
+        total de 8V, que será regulada por um circuito controlador de tensão na
+        placa para alimentar o carrinho.
+      </p>
+    </div>
+    <div id="modal7" style="display: none">
+      <p class="modal-text">
+        <strong>Regulador de Tensão</strong>
+        <br>
+        <br>
+        O regulador de tensão mantém a voltagem estável
+        dentro do robô, garantindo que todos os componentes recebam a quantidade
+        correta de energia sem sobrecarregar ou sub-alimentar nenhum deles.
+      </p>
+    </div>
+
+    <h2 class="main-text-centralizado" id="imagensProjeto">Projeto final</h2>
+    <section class="card-projeto">
+      <div class="arduino-centralizado">
+        <p class="main-text-p">
+          Realizamos o desenvolvimento de um carro autônomo em escala, baseado
+          na interação entre a placa Arduíno com os componentes eletrônicos que
+          garantiram a mobilidade e eficiência na detecção de obstáculos. O
+          carrinho produzido foi utilizado para participação na competição
+          Robocar Race 2024, promovida pela FATEC Santo André e a UFABC.
+        </p>
+        <img
+          src="../img/chassi6.jpg"
+          alt="Imagem do Circuito Eletrônico"
+          class="com-borda"
+          id="circuitoFinalizado"
+        />
+        <img 
+          src="../img/carro-pintado.jpeg" 
+          alt="carro finalizado"
+          class="com-borda"
+          id="carroFinalizado">
+      </div>
+    </section>
+
+    <h2 class="main-text-centralizado" id="imagensProjeto">Código arduino</h2>
+    <img src="../img/carbon-code.png" alt="Código Arduino" id="carbon-code" />
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="../img/logo sem efeito.png" alt="Logo Cyber Squad" />
+          <div class="footer-logo-text">
+            <h3>CYBER SQUAD</h3>
+            <p class="footer-descricao">Transformando desafios em solução</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>LINKS</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#sobre-nos-conteudo">Sobre Nós</a></li>
+            <li><a href="html/projeto.html">Projeto</a></li>
+          </ul>
+        </div>
+        <div class="footer-gallery">
+          <h4>GALERIA</h4>
+          <ul>
+            <li><a href="">Vídeo Pitch</a></li>
+            <li><a href="">Portfólio</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>CONTATE-NOS!</h4>
+          <a href="https://forms.gle/Rp9c9bT3bnCxisiJ7" target="_blank">
+            <button class="botao-contato">Avalie nossa equipe</button>
+          </a>
+          <a href="./contato.html">
+            <button class="botao-contato">Fale com nossos membros</button>
+          </a>        
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Cyber Squad - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

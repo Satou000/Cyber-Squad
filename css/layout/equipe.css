@@ -1,0 +1,95 @@
+#equipe {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px; /* Espaçamento entre a coluna de texto e a imagem */
+  margin-bottom: 0em;
+}
+
+.sobre-nos-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+#sobreNos {
+  padding: 50px 80px 0px;
+  font-size: 2em;
+  font-family: var(--titulos);
+  color: #fff;
+  margin-bottom: 0em;
+  text-shadow: 
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+}
+
+#conhecaNos {
+  padding: 20px 0px 0px 80px;
+  font-family: var(--titulos);
+  font-size: 1.5em;
+  color: #fff;  
+  margin-bottom: 1em;
+  text-shadow: 
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+}
+
+#sobreP {
+  padding: 15px 0px 0px 0px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+  font-family: var(--p-font);
+  max-width: 1600px; /* Define uma largura máxima padrão */
+  margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+#fotoEquipe {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) { /* Ajuste este valor conforme necessário */
+  #equipe {
+    padding: 0px 10px 0px 10px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #sobreNos {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #conhecaNos {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .sobre-nos-conteudo {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  #sobreP {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #fotoEquipe {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) { /* Ajuste este valor conforme necessário */
+  .sobre-nos-p {
+    max-width: 100%;
+    padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
+  }
+}

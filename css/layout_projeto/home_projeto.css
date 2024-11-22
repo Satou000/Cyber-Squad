@@ -1,0 +1,45 @@
+.titulo-principal {
+    display: block;
+    margin: 10px auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+  
+  /* Texto da mensagem principal */
+  .texto-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    padding: 15px 250px;
+    text-align: center;
+    font-family: var(--p-font);
+  }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Para telas menores, como tablets */
+    .texto-principal {
+      padding: 15px 15px;
+    }
+    .titulo-principal {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Para telas de smartphones */
+    .texto-principal {
+      padding: 10px 10px; /* Mais compacto em smartphones */
+    }
+    .titulo-principal {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imagem-principal {
+      max-width: 90%;
+    }
+  }
+  

@@ -1,0 +1,223 @@
+.equipe {
+  display: flex;
+  align-items: flex-start;
+  gap: 150px; /* Espaçamento entre a coluna de texto e a imagem */
+  padding: 0px 100px 80px 80px;
+  margin-bottom: 0em;
+}
+
+.sobre-nos-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-nos {
+  padding: 0px 80px 0px;
+  font-size: 2.5em;
+  font-family: var(--titulos);
+  color: #fff;
+  margin-bottom: 0em;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
+    0 0 30px #00aeff;
+}
+
+.conheca-nos {
+  padding: 0px 0px 0px 80px;
+  font-family: var(--titulos);
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
+    0 0 30px #00aeff;
+}
+
+.sobre-nos-p {
+  padding: 0px 0px 0px 0px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ccc;
+  text-align: justify;
+  font-family: var(--p-font);
+  max-width: 1600px; /* Define uma largura máxima padrão */
+  margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+.equipe img {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Ajuste este valor conforme necessário */
+  .equipe {
+    padding: 0px 10px 0px 10px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .sobre-nos {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .conheca-nos {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .sobre-nos-conteudo {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .sobre-nos-p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .equipe img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajuste este valor conforme necessário */
+  .sobre-nos-p {
+    max-width: 100%;
+    padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
+  }
+}
+
+/* Estrutura principal do projeto */
+.nosso-projeto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #fff;
+  padding: 40px 80px;
+}
+
+/* Coluna esquerda: Título e imagem */
+.nosso-projeto-imagem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Título principal */
+.titulo-projeto {
+  font-size: 2.5em;
+  color: #fff;
+  font-family: var(--titulos);
+  text-shadow: 
+    0 0 5px rgba(0, 174, 255, 0.8),
+    0 0 10px rgba(0, 174, 255, 0.8),
+    0 0 20px rgba(0, 174, 255, 0.5);
+}
+
+/* Imagem do carrinho */
+.carrinho-img {
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+  margin-top: 20px;
+}
+/* Coluna direita: Texto e botões */
+.nosso-projeto-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 40px;
+  text-align: justify;
+}
+
+/* Descrição do projeto */
+.descricao-projeto {
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-family: var(--p-font);
+}
+
+/* Estilo dos botões */
+.botoes-projeto {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+.botao-detalhes {
+  display: inline-block;
+  background: #1a1a1a;
+  border: 2px solid #00ffff;
+  border-radius: 6px;
+  color: #00ffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  text-align: center;
+  font-family: var(--titulos);
+  text-decoration: none;
+}
+.botao-detalhes:hover {
+  background: #00ffff;
+  color: #1a1a1a;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.8);
+  border-color: #1a1a1a;
+  transform: scale(1.1);
+}
+.botao-detalhes:active {
+  transform: translateY(1px);
+}
+.small-gap {
+  padding-top: 15%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .nosso-projeto {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 40px;
+  }
+
+  .nosso-projeto-imagem,
+  .nosso-projeto-texto {
+    padding: 0;
+    align-items: center;
+  }
+
+  .titulo-projeto {
+    font-size: 2em;
+  }
+
+  .descricao-projeto {
+    font-size: 0.9em;
+  }
+
+  .carrinho-img {
+    width: 80%;
+  }
+
+  .botoes-projeto {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .botao-detalhes {
+    width: 100%;
+  }
+  
+  .small-gap {
+  padding-top: 35%;
+  }
+}

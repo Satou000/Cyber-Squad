@@ -1,0 +1,72 @@
+.membros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  padding: 0em;
+  text-align: center;
+}
+
+.nossos-membros {
+  font-size: 2em;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  padding: 0 80px;
+  font-family: var(--titulos);
+  text-shadow: 
+  0 0 5px #00aeff,
+  0 0 10px #00aeff,
+  0 0 10px #00aeff,
+  0 0 30px #00aeff;
+}
+
+/* Cada membro individual */
+.pessoas {
+  text-align: center;
+  width: 150px; /* Tamanho fixo dos itens */
+}
+
+/* Estilo das imagens */
+.pessoas img {
+  width: 100%;
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 20px #00aeff; /* Efeito neon na borda */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.pessoas img:hover {
+  /* transform: scale(1.05); // Leve zoom ao passar o mouse */
+  box-shadow: 0 0 10px #00aeff, 0 0 20px #00aeff, 0 0 40px #00aeff; /* Brilho mais intenso */
+}
+
+/* Nome e cargo */
+.nomes {
+  font-size: 1.2em;
+  font-family: var(--p-membros);
+  color: #fff;
+  margin-top: 10px;
+}
+
+.cargos {
+  font-size: 0.9em;
+  color: #ccc;
+  font-family: var(--p-cargos);
+}
+
+/* Layout responsivo */
+@media (max-width: 600px) {
+  .membros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pessoas {
+    width: 100%;
+    max-width: 200px; /* Largura máxima em telas pequenas */
+  }
+}
+
+  
+  
+  

@@ -1,0 +1,100 @@
+body {
+  color: white;
+  background-color: #21192c;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+  margin-bottom: 200px;
+}
+
+main {
+  flex: 1; /* Garante que o main expanda para empurrar o footer para o final */
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  background-color: #3b4042;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: var(--p-font);
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.contato-item img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.info h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.info a {
+  color: #00aeff;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .contato-grid {
+    grid-template-columns: 1fr; /* Coloca os itens em uma coluna */
+  }
+
+  header {
+    margin-bottom: 150px;
+  }
+
+  .contato-item {
+    flex-direction: column; /* Alinha conteúdo verticalmente */
+    text-align: center;
+  }
+
+  .contato-item img {
+    margin: 0 auto 10px; /* Centraliza a imagem */
+  }
+
+  .info {
+    align-items: center; /* Centraliza o conteúdo no modo responsivo */
+    text-align: center;
+  }
+}
