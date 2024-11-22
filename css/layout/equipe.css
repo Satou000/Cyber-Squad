@@ -82,6 +82,8 @@
 
   #fotoEquipe {
     max-width: 100%;
+    margin: 0; /* Remove qualquer margem aplicada */
+    padding: 0; /* Remove qualquer espaçamento interno */
     margin-left: 0;
     margin-bottom: 20px;
     display: -webkit-flex;
