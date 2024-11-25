@@ -20,6 +20,20 @@
     padding: 0 80px;
     font-family: var(--titulos);
   }
+
+  .grupo10 {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0 80px;
+    font-family: var(--titulos);
+    text-shadow: 
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  }
   
   
   
