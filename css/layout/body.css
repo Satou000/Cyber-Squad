@@ -14,6 +14,15 @@ body {
   margin: auto;
 }
 
+strong {
+  font-family: var(--titulos);
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #ff0084, 0 0 10px #ff0084, 0 0 10px #ff0084,
+    0 0 30px #ff0084;
+}
+
 /* Overlay escuro na imagem */
 .home-page::before {
   content: "";
