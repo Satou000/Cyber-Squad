@@ -1,0 +1,60 @@
+.equipe {
+  display: flex;
+  align-items: flex-start;
+  gap: 150px; /* Espaçamento entre a coluna de texto e a imagem */
+  padding: 100px 80px;
+  margin-bottom: 0em;
+}
+
+.sobre-nos-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-nos {
+  font-size: 2.5em;
+  font-family: var(--titulos);
+  color: #fff;
+  margin-bottom: 0em;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
+    0 0 30px #00aeff;
+}
+
+.conheca-nos {
+  font-family: var(--titulos);
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
+    0 0 30px #00aeff;
+}
+
+.sobre-nos-p {
+  font-size: 1em;
+  line-height: 2;
+  color: #fff;
+  text-align: justify;
+  font-family: var(--p-font);
+}
+
+.equipe img {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 5em;
+}
+
+@media (max-width: 768px) {
+  /* Ajuste este valor conforme necessário */
+  .equipe {
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .equipe img {
+    margin-top: 0; /* Adiciona um espaço acima da imagem quando em coluna */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+  }
+}

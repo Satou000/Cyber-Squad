@@ -1,0 +1,441 @@
+body {
+  color: white;
+  background-color: #21192c;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+strong {
+  font-family: var(--titulos);
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #ff0084, 0 0 10px #ff0084, 0 0 10px #ff0084,
+    0 0 30px #ff0084;
+}
+
+.classificacao {
+  font-family: var(--titulos);
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  text-align: center;
+}
+
+.home-page-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(6, 3, 3, 0.5);
+  z-index: -1;
+}
+
+.home-page-2 {
+  background-image: url(../../img/Sobre_Projeto_Fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+}
+
+.small-gap2 {
+  padding-top: 5%;
+  padding: 20px;
+}
+
+/* Sobre a Robocar */
+.sobre-robocar {
+  text-align: center;
+  padding:30px;
+  background-color: #302540;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagens-container {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  gap: 20px; /* Espaçamento entre as imagens */
+  margin-top: 20px; /* Distância do topo */
+}
+
+.imagem {
+  width: 48%; /* Ajuste as imagens para ocupar metade da largura */
+  height: auto;
+  border-radius: 10px; /* Adiciona bordas arredondadas nas imagens */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar as imagens */
+}
+
+.main-text {
+  font-size: 2em;
+  font-family: var(--titulos);
+  color: #fff;
+  text-shadow:
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  text-align: left; /* Alinha o texto à esquerda */
+  white-space: nowrap;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.5em;
+  font-family: var(--titulos);
+  color: #fff;
+  text-shadow:
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  text-align: left; /* Alinha o texto à esquerda */
+  white-space: nowrap;
+  text-align: center;
+}
+
+.card-text-descricao {
+  font-size: 0.9em;
+  font-family: var(--p-font);
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
+.modalidades {
+  font-size: 2em;
+  font-family: var(--titulos);
+  color: #fff;
+  text-shadow: 
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 50px;
+}
+
+.main-text-centralizado {
+  font-size: 2em;
+  font-family: var(--titulos);
+  color: #fff;
+  text-shadow:
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  text-align: center;
+}
+
+#imagensProjeto {
+  font-size: 2em;
+  font-family: var(--titulos);
+  color: #fff;
+  text-shadow:
+    0 0 5px #00aeff,
+    0 0 10px #00aeff,
+    0 0 10px #00aeff,
+    0 0 30px #00aeff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.main-text-p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ccc;
+  text-align: justify;
+  font-family: var(--p-font);
+  max-width: 1600px; /* Define uma largura máxima padrão */
+  margin: 0 auto; /* Centraliza o parágrafo */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Garante que nada além do contêiner fique visível */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta o conteúdo para preencher o contêiner */
+}
+
+#carbon-code {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#vencedores {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre os botões e o contêiner de cards */
+  z-index: 1; /* Garante que o cards-container fique abaixo do nav */
+}
+
+.cards-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 1000px; /* Ajuste conforme necessário */
+  z-index: 1; /* Garante que o cards-wrapper fique abaixo do nav */
+}
+
+.card {
+  flex: 0 0 320px;
+  height: 420px;
+  margin: 10px;
+  background-color: #302540;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #ffffff;
+  text-align: center;
+  position: relative; /* Add this line */
+}
+
+.card-title {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #00aeff;
+  font-family: var(--titulos);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  border-top: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*Dias de evento*/
+.card-projeto-primeiro-evento h2.main-text {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-projeto-primeiro-evento .main-text-p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: justify;
+  font-family: var(--p-font);
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 900px; /* Limita a largura do conteúdo */
+}
+
+.evento-content {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre o conteúdo e a imagem */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  gap: 30px; /* Espaço entre o texto e a imagem */
+}
+
+.texto-container {
+  flex: 1;
+  max-width: 60%; /* Garante que o texto não ocupe a tela inteira */
+}
+
+.imagem-container {
+  flex: 1;
+  max-width: 35%; /* Garante que a imagem ocupe um espaço proporcional */
+}
+
+.imagem-evento {
+  width: 100%; /* A imagem ocupa 100% da largura do seu contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+.desafios {
+  padding-left: 40px; /* Remove o padding à esquerda */
+}
+
+.desafios li {
+  position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
+  font-size: 1em;
+  font-family: var(--p-font);
+  color: #ccc;
+  padding: 10px;
+}
+
+.card-projeto-primeiro-evento {
+  background-color: #302540;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1600px;
+  margin-top: 80px;
+}
+
+/* Centralização do conteúdo da entrevista */
+.Entrevista, .entrevistaPablo {
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Cor do texto */
+  font-family: var(--titulos); /* Defina a fonte que você deseja para os títulos */
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff; /* Efeito de sombra no texto */
+}
+
+/* Container para centralizar o conteúdo */
+.entrevista-container {
+  display: flex;
+  flex-direction: column; /* Empilha os itens (título, subtítulo e vídeo) verticalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  height: 100vh; /* Faz o contêiner ocupar toda a altura da tela */
+  background-color: #21192c; /* Fundo escuro */
+}
+
+/* Estilo para o vídeo */
+.video-wrapper {
+  display: flex;
+  justify-content: center; /* Centraliza o vídeo horizontalmente */
+  align-items: center; /* Garante que o vídeo fique no centro do contêiner */
+  margin-top: 20px; /* Espaçamento entre o subtítulo e o vídeo */
+  width: 100%;
+  max-width: 900px; /* Limita a largura máxima do vídeo */
+}
+
+video {
+  width: 100%; /* Faz o vídeo ocupar toda a largura disponível dentro do wrapper */
+  max-width: 600px; /* Define a largura máxima para o vídeo */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  border-radius: 10px; /* Bordas arredondadas no vídeo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do vídeo */
+}
+
+/* Estilos para o card do Segundo Dia de Evento */
+.card-projeto-segundo-evento {
+  background-color: #302540;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1600px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Alinha o conteúdo e o vídeo lado a lado */
+  align-items: center;
+}
+
+.card-projeto-segundo-evento .main-text-conteudo {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.card-projeto-segundo-evento h2.main-text {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff;
+  margin-bottom: 20px;
+}
+
+.card-projeto-segundo-evento .main-text-p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: justify;
+  font-family: var(--p-font);
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 900px;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .main-text {
+    padding: 0px 1000px 0px 20px;
+    margin-left: 0rem;
+  }
+
+  .main-text-conteudo {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .main-text-p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #carbon-code {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajuste este valor conforme necessário */
+  .main-text-p {
+    max-width: 100%;
+    padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
+  }
+
+  .video-container {
+    max-width: 90%; /* Ajusta para caber melhor em telas menores */
+  }
+}
+
