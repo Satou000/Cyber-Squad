@@ -65,6 +65,8 @@ strong {
   justify-content: center; /* Centraliza as imagens horizontalmente */
   gap: 20px; /* Espaçamento entre as imagens */
   margin-top: 20px; /* Distância do topo */
+  flex-wrap: wrap;
+  margin: 20px auto;
 }
 
 .imagem {
@@ -72,6 +74,7 @@ strong {
   height: auto;
   border-radius: 10px; /* Adiciona bordas arredondadas nas imagens */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar as imagens */
+  max-width: 500px;
 }
 
 .main-text {
@@ -83,8 +86,6 @@ strong {
     0 0 10px #00aeff,
     0 0 10px #00aeff,
     0 0 30px #00aeff;
-  text-align: left; /* Alinha o texto à esquerda */
-  white-space: nowrap;
   text-align: center;
 }
 
@@ -146,7 +147,6 @@ strong {
     0 0 10px #00aeff,
     0 0 30px #00aeff;
   text-align: center;
-  margin-top: 60px;
 }
 
 .main-text-p {
@@ -259,6 +259,7 @@ strong {
 
 .evento-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; /* Espaçamento entre o conteúdo e a imagem */
   align-items: center; /* Alinha o conteúdo verticalmente no centro */
   gap: 30px; /* Espaço entre o texto e a imagem */
@@ -266,12 +267,15 @@ strong {
 
 .texto-container {
   flex: 1;
+  min-width: 300px; /* Define uma largura mínima */
   max-width: 60%; /* Garante que o texto não ocupe a tela inteira */
 }
 
 .imagem-container {
   flex: 1;
+  min-width: 300px; /* Define uma largura mínima */
   max-width: 35%; /* Garante que a imagem ocupe um espaço proporcional */
+  text-align: center;
 }
 
 .imagem-evento {
@@ -303,7 +307,16 @@ strong {
 }
 
 /* Centralização do conteúdo da entrevista */
-.Entrevista, .entrevistaPablo {
+.Entrevista {
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Cor do texto */
+  font-family: var(--titulos); /* Defina a fonte que você deseja para os títulos */
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff; /* Efeito de sombra no texto */
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.entrevistaPablo {
   text-align: center; /* Centraliza o texto */
   color: white; /* Cor do texto */
   font-family: var(--titulos); /* Defina a fonte que você deseja para os títulos */
@@ -325,14 +338,14 @@ strong {
   display: flex;
   justify-content: center; /* Centraliza o vídeo horizontalmente */
   align-items: center; /* Garante que o vídeo fique no centro do contêiner */
-  margin-top: 20px; /* Espaçamento entre o subtítulo e o vídeo */
   width: 100%;
   max-width: 900px; /* Limita a largura máxima do vídeo */
+  margin: 0 auto;
 }
 
 video {
   width: 100%; /* Faz o vídeo ocupar toda a largura disponível dentro do wrapper */
-  max-width: 600px; /* Define a largura máxima para o vídeo */
+  max-width: 800px; /* Define a largura máxima para o vídeo */
   height: auto; /* Ajusta a altura proporcionalmente */
   border-radius: 10px; /* Bordas arredondadas no vídeo */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do vídeo */
@@ -350,6 +363,7 @@ video {
   display: flex;
   justify-content: space-between; /* Alinha o conteúdo e o vídeo lado a lado */
   align-items: center;
+  gap: 30px; /* Espaço entre os elementos */
 }
 
 .card-projeto-segundo-evento .main-text-conteudo {
@@ -393,31 +407,33 @@ video {
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+  .imagens-container .imagem {
+    width: 93%; /* Ajusta o tamanho das imagens para telas médias */
+  }
+
+  .Entrevista {
+    font-size: 1.5em;
+  }
+
+  .entrevistaPablo {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 768px) {
-  .cards-wrapper {
-    flex-direction: column;
-    align-items: center;
+
+  .main-text,
+  .main-text-centralizado {
+    font-size: 1.5em; /* Diminui o tamanho da fonte em telas menores */
   }
 
-  .card {
-    flex: 0 0 auto;
-    width: 90%;
-    margin: 10px 0;
+  .card-text-descricao {
+    font-size: 1em; /* Ajusta o texto para tamanho adequado */
   }
 
-  .main-text {
-    padding: 0px 1000px 0px 20px;
-    margin-left: 0rem;
-  }
-
-  .main-text-conteudo {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-
-  .main-text-p {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .modalidades {
+    font-size: 1.5em; /* Ajuste para telas menores */
   }
 
   #carbon-code {
@@ -425,17 +441,113 @@ video {
     display: block;
     margin: 0 auto;
   }
+
+  .evento-content {
+    flex-direction: column; /* Elementos empilham em telas menores */
+    align-items: center; /* Centraliza o conteúdo */
+  }
+
+  .texto-container,
+  .imagem-container {
+    max-width: 100%; /* Ocupa a largura total */
+    text-align: center;
+  }
+
+  .main-text {
+    font-size: 1.5em; /* Ajusta o tamanho do texto */
+  }
+
+  .main-text-p,
+  .desafios li {
+    font-size: 1em; /* Ajusta o texto para telas menores */
+  }
+
+  .card-projeto-segundo-evento {
+    flex-direction: column; /* Empilha o texto e o vídeo em telas menores */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-projeto-segundo-evento .main-text-conteudo {
+    padding-right: 0; /* Remove o espaçamento lateral */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .card-projeto-segundo-evento .video-container video {
+    max-width: 100%; /* Permite que o vídeo ocupe toda a largura em telas menores */
+  }
+
+  .imagens-container {
+    gap: 15px; /* Reduz o espaçamento entre imagens */
+  }
+
+  .imagens-container .imagem {
+    width: 93%; /* Cada imagem ocupa 100% da largura */
+  }
+
+  .Entrevista {
+    font-size: 1.5em;
+  }
+
+  .entrevistaPablo {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 480px) {
-  /* Ajuste este valor conforme necessário */
-  .main-text-p {
-    max-width: 100%;
-    padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
+  .main-text,
+  .main-text-centralizado {
+    font-size: 1.2em;
   }
 
-  .video-container {
-    max-width: 90%; /* Ajusta para caber melhor em telas menores */
+  .card-text-descricao {
+    font-size: 0.9em;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #carbon-code {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #imagensProjeto {
+    font-size: 2em; /* Reduz o tamanho do título */
+  }
+
+  .classificacao {
+    font-size: 1.2em; /* Ajusta o tamanho do texto de classificação */
+  }
+
+  .Entrevista {
+    font-size: 1.5em; /* Reduz o tamanho do título da entrevista */
+  }
+
+  .entrevistaPablo {
+    font-size: 0.85em; /* Texto menor */
+  }
+
+  .video-wrapper video {
+    width: 93%; /* O vídeo ocupa toda a largura disponível */
+  }
+
+  .imagens-container {
+    margin-bottom: 10px; /* Reduz a margem inferior */
+  }
+
+  .entrevista-container {
+    margin-top: 10px; /* Reduz a margem superior */
+  }
+
+  .video-wrapper {
+    margin-bottom: 10px; /* Diminui o espaço após o vídeo */
   }
 }
-
