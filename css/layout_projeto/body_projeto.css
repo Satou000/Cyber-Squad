@@ -1,10 +1,77 @@
 body {
   color: white;
   background-color: #21192c;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .small-gap2 {
   padding-top: 5%;
+}
+
+/* Estilo para o título (h2) */
+.projeto-tematica h2.tematica-text {
+  font-size: 2em; /* Ajusta o tamanho do título */
+  color: #fff;
+  text-align: left; /* Alinha o título à esquerda */
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff;
+  font-family: var(--titulos); /* Certifique-se de que a variável de fonte esteja correta */
+}
+
+/* Estilo para o contêiner principal */
+.tematica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaçamento entre o conteúdo e a imagem */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  background-color: #2c2a3a; /* Fundo do card */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave no card */
+  padding: 20px; /* Adiciona espaçamento interno */
+  margin: 20px auto; /* Espaçamento externo e centralização */
+  max-width: 1200px; /* Largura máxima */
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não adicione largura extra */
+  gap: 30px; /* Adiciona o espaço entre o conteúdo (p) e a imagem */
+  flex-direction: row;
+}
+
+/* Estilo para a parte do texto */
+.texto-container {
+  flex: 1;
+  min-width: 280px; /* Largura mínima para garantir responsividade */
+  max-width: 60%; /* Limita a largura do texto */
+  margin: 0; /* Remove margens extras */
+  margin-left: 20px; /* Margem à esquerda para deslocar o conteúdo */
+}
+
+/* Estilo para o parágrafo de texto */
+.projeto-tematica .tematica-text-p {
+  font-size: 1em; /* Ajusta o tamanho da fonte */
+  line-height: 1.6;
+  color: #ccc;
+  text-align: justify;
+  font-family: var(--p-font); /* Certifique-se de que a variável de fonte esteja correta */
+  margin: 20px 0;
+  max-width: 900px; /* Limita a largura do conteúdo */
+}
+
+/* Estilo para a imagem */
+.imagem-tematica {
+  flex: 1;
+  min-width: 300px; /* Largura mínima */
+  max-width: 50%; /* Limita a largura da imagem */
+  text-align: center;
+}
+
+.imagem-tematica img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  width: 500px; /* A imagem vai se ajustar proporcionalmente */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
 }
 
 .card-projeto {
@@ -26,13 +93,11 @@ body {
   font-size: 2em;
   font-family: var(--titulos);
   color: #fff;
-  margin-left: 40px;
   text-shadow:
     0 0 5px #00aeff,
     0 0 10px #00aeff,
     0 0 10px #00aeff,
     0 0 30px #00aeff;
-  text-align: left; /* Alinha o texto à esquerda */
   white-space: nowrap;
 }
 
@@ -40,14 +105,12 @@ body {
   font-size: 2em;
   font-family: var(--titulos);
   color: #fff;
-  margin-left: 50px;
   text-shadow:
     0 0 5px #00aeff,
     0 0 10px #00aeff,
     0 0 10px #00aeff,
     0 0 30px #00aeff;
   text-align: center; /* Alinha o texto à esquerda */
-  padding: 10px; /* Adiciona padding para a borda */
 }
 
 #imagensProjeto {
@@ -92,7 +155,7 @@ body {
   font-family: var(--p-font);
   max-width: 1600px; /* Define uma largura máxima padrão */
   margin: 0 auto; /* Centraliza o parágrafo */
-  padding: 10px; /* Adiciona padding para a borda */
+  padding: 50px; /* Adiciona padding para a borda */
 }
 
 .conheca-nos {
@@ -180,7 +243,7 @@ body {
   overflow: hidden; /* Garante que nada além do contêiner fique visível */
   margin: 0 auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 200px;
   border-radius: 10px;
 }
 
@@ -463,6 +526,24 @@ body {
     display: block;
     margin: 0 auto;
   }
+
+  .tematica {
+    flex-direction: column; /* Empilha os elementos em telas menores */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 20px 15px; /* Ajusta o padding para garantir o espaçamento lateral */
+    margin: 20px; /* Mantém a margem geral */
+    width: auto; /* Garante que a largura não ultrapasse a tela */
+  }
+
+  .texto-container {
+    max-width: 100%; /* O conteúdo ocupa toda a largura disponível */
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .imagem-tematica {
+    max-width: 100%; /* A imagem ocupa toda a largura disponível */
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -473,7 +554,7 @@ body {
   }
 
   .video-container {
-    max-width: 90%; /* Ajusta para caber melhor em telas menores */
+    max-width: 50%; /* Ajusta para caber melhor em telas menores */
   }
 }
 
